@@ -1,0 +1,26 @@
+<nav>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'pokemones50' %}"">50 primeros pokemones.</a>
+        </li>
+        <li>
+            <a href="{% url 'grass' %}">Tipo: grass.</a>
+        </li>
+        <li>
+            <a href="{% url 'flying' %}">Tipo: flying, 10 o mas de altura.</a>
+        </li>
+        <li>
+            <a href="{% url 'peso' %}">Pokemones que pesan entre 30 y 80.</a>
+        </li>
+        <li>
+            <a href="{% url 'invertidos' %}">Pokemones con el nombre invertido.</a>
+        </li>
+        
+    </ul>
+</nav>
+
+{% block content %}
+{% endblock %}
